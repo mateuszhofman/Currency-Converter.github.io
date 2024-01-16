@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6ec79b24d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <p class="date"></p>
+        <h1>Currency Converter</h1>
+        <p class="current-exchange">1 PLN = 0.00 USD</p>
+
+        <div class="section-top">
+            <div class="box-items">
+                <input type="number" class="amount-one" value="1">
+                <select id="currency-one">
+                    <option value="PLN" selected>PLN</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="swap"><i class="fa-solid fa-retweet"></i></button>
+
+        <div class="section-bottom">
+            <div class="box-items">
+                <input type="number" class="amount-two" disabled>
+                <select id="currency-two">
+                    <option value="PLN">PLN</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
